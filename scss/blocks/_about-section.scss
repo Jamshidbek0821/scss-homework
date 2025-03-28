@@ -1,0 +1,50 @@
+.about {
+    &__section-wrapper {
+        margin-top: 68px;
+        margin-bottom: 77px;
+        @include HeaderDisplayFlex();
+        gap: 39px;
+    }
+
+    &__title {
+        @include Typograpyh700();
+        color: var(--clr--333);
+        margin-bottom: 20px;
+    }
+
+    &__img:hover {
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+
+    &__desc {
+        @include Typography400();
+        color: var(--clr--333);
+        opacity: 80%;
+        margin-bottom: 25px;
+    }
+
+    &__btn {
+        margin-top: 45px;
+        padding: 15px 40px;
+        border-radius: 8px;
+        background-color: var(--clr--blue);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: var(--clr--white);
+        margin-left: 400px;
+        cursor: pointer;
+        border: 2px solid var(--clr--blue);
+    }
+
+    &__btn:hover {
+        @include BtnHover();
+    }
+
+    &__btn:active {
+        @include BtnActive();
+    }
+
+}

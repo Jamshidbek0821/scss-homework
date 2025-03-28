@@ -1,0 +1,82 @@
+.catagory {
+    &__title {
+        @include Typograpyh700();
+        text-align: center;
+        color: var(--clr--333);
+    }
+
+    &__list {
+        margin-top: 64px;
+        margin-bottom: 66px;
+        @include HeaderDisplayFlex();
+        justify-content: center;
+        gap: 26px;
+    }
+
+    &__item:hover {
+        transition: 0.3s;
+        transform: scale(1.05);
+    }
+
+    &__item {
+        width: 250px;
+        border-radius: 6px;
+        border: 2px solid var(--clr--rgba);
+    }
+
+    &__list-title {
+        padding-left: 19px;
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: var(--clr--000);
+        opacity: 80%;
+    }
+
+    &__list-sub {
+        padding-left: 19px;
+    }
+
+    &__item-sub>span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        color: var(--clr--333);
+        opacity: 60%;
+    }
+
+    &__item-sub {
+        margin-top: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        color: var(--clr--333);
+        opacity: 80%;
+    }
+
+    &__btn {
+        padding: 9px 61px 10px 61px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        border: 2px solid var(--clr--blue);
+        @include TypographyBtn();
+        text-align: center;
+        background-color: var(--clr--blue);
+        color: var(--clr--white);
+        cursor: pointer;
+    }
+
+    &__btn:hover {
+        @include BtnHover();
+    }
+
+    &__btn:active {
+        @include BtnActive();
+    }
+}

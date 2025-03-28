@@ -1,0 +1,97 @@
+.second-page-footer {
+    background-color: #1A1A1A;
+}
+
+.footer {
+    &__img {
+        display: flex;
+        gap: 6px;
+        margin-right: 105px;
+    }
+
+    &__img-title {
+        @include Typography500();
+        color:var(--clr--white);
+    }
+
+    &__img-title:hover {
+        color: var(--clr--blue);
+    }
+
+    &__section-wrapper {
+        padding-top: 50px;
+        padding-bottom: 35px;
+        display: flex;
+    }
+
+    &__item {
+        width: 285px;
+        margin-top: 15px;
+    }
+
+    &__title {
+        @include TypographyTitle();
+    }
+
+    &__sub {
+        @include Typographys();
+    }
+
+    &__desc {
+        margin-top: 8px;
+        color: var(--clr--white);
+    }
+
+    &__sub:hover {
+        color: var(--clr--blue);
+    }
+
+    &__item-top {
+        @include HeaderDisplayFlex();
+        flex-direction: column;
+    }
+
+    &__strong {
+        padding-left: 20px;
+        @include TypographyTitle();
+    }
+
+    &__input {
+       @include FooterInput();
+    }
+
+    &__input::placeholder {
+        color: var(--clr--white);
+    }
+
+    &__btn {
+        @include Footer();
+    }
+
+    &__btn:hover {
+        @include BtnHover();
+    }
+
+    &__btn:active {
+        @include BtnActive();
+    }
+    &__line {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        color: gray;
+        margin-top: 18px;
+        padding-bottom: 32px;
+        cursor: pointer;
+    }
+    
+    &__line:hover {
+        color: var(--clr--blue);
+    }
+
+    &__border-btn {
+        
+        border-bottom: 2px solid gray;
+    }
+}

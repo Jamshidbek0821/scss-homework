@@ -1,0 +1,37 @@
+.about {
+    &__section-wrapper {
+        text-align: center;
+        margin-top: 67px;
+       @include TypographyTop();
+        color: var(--clr--333);
+    }
+
+    &__item {
+        margin-top: 51px;
+        width: 350px;
+    }
+
+    &__item-title {
+        margin-top: 40px;
+        margin-bottom: 100px;
+        font-family: 'Montserrat', sans-serif;
+        @include TypographyBtn();
+        color: var(--clr--333);
+        opacity: 80%;
+    }
+
+    &__item-top {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: var(--clr--blue);
+        text-align: center;
+    }
+
+    &__list {
+        @include HeaderDisplayFlex();
+        gap: 56px;
+    }
+}

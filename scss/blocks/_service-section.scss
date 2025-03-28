@@ -1,0 +1,39 @@
+.service {
+    &__section-wrapper {
+        text-align: center;
+    }
+
+    &__title {
+        @include Typograpyh700();
+        text-align: center;
+        text-transform: lowercase;
+        color: var(--clr--333);
+    }
+
+    &__desc {
+        width: 873px;
+        margin-top: 30px;
+        margin: 0 auto;
+        @include Typography400();
+        color: var(--clr--333);
+        opacity: 80%;
+    }
+
+    &__img {
+        margin-top: 40px;
+    }
+
+    &__partners-title {
+        text-align: center;
+        margin-top: 67px;
+        @include Typograpyh700();
+        color: var(--clr--333);
+    }
+}
+
+.partners {
+    margin-top: 50px;
+    @include HeaderDisplayFlex();
+    justify-content: center;
+    gap: 50px;
+}

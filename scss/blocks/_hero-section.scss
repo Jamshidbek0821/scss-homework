@@ -1,0 +1,46 @@
+.hero-section {
+  margin: 0 auto;
+  height: 566px;
+  background-image: url('../images/carusel-bg.png');
+}
+
+.hero {
+  &__section-wrapper {
+    padding-top: 110px;
+    padding-bottom: 122px;
+  }
+
+  &__title {
+    width: 582px;
+    @include TypographyItem();
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    margin-top: 16px;
+    width: 480px;
+    @include TypographyDesc();
+    color: var(--clr--FFFCC);
+    opacity: 80%;
+  }
+
+  &__btn {
+    margin-top: 32px;
+    padding: 15px 30px 15px 31px;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    @include Typography600();
+    background-color: var(--clr--blue);
+    color: var(--clr--white);
+    border: 2px solid var(--clr--blue);
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    @include BtnHover();
+  }
+
+  &__btn:active {
+    @include BtnActive();
+  }
+}

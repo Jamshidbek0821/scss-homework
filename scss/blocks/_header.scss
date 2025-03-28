@@ -1,0 +1,124 @@
+.site-header {
+    padding: 30px 0 16px;
+}
+
+.header {
+    &__list {
+        padding-bottom: 10px;
+        justify-content: end;
+        gap: 20px;
+        border-bottom: 2px solid var(--clr--rgba);
+        @include HeaderDisplayFlex();
+    }
+
+    &__desc {
+      @include PhoneStyle();
+    }
+
+    &__item-select {
+        padding-left: 12px;
+        gap: 6px;
+        border-left: 2px solid var(--clr--rgba);
+        @include HeaderDisplayFlex();
+    }
+
+    &__border {
+        height: 50px;
+    }
+
+    &__phone {
+        @include PhoneStyle();
+        @include HeaderDisplayFlex();
+        gap: 8px;
+    }
+
+    &__phone:hover {
+        color: var(--clr--blue);
+    }
+
+    &__kontact {
+        @include PhoneStyle();
+    }
+
+    &__kontact:hover {
+        color: var(--clr--blue);
+    }
+
+    &__select-language {
+        @include TypographyLanguage();
+    }
+
+    &__option {
+        background-color: var(--clr--blue);
+        color: var(--clr--white);
+    }
+
+    &__phone-item {
+        @include HeaderDisplayFlex();
+        justify-content: space-between;
+    }
+
+    &__img {
+        margin-top: 18px;
+    }
+
+    &__logo {
+        @include HeaderDisplayFlex();
+        gap: 6px;
+    }
+
+    &__top {
+        margin-top: 28px;
+        @include TypographyList();
+        color: var(--clr--333);
+    }
+
+    &__top:hover {
+        color: var(--clr--blue);
+    }
+
+    &__nav-links {
+        margin-top: 26px;
+        @include HeaderDisplayFlex();
+        gap: 46px;
+        width: 446px;
+        margin-left: 90px;
+    }
+
+    &__nav-link-item {
+        @include NavLink();
+    }
+
+    &__nav-link-item:hover {
+        color: var(--clr--blue);
+    }
+
+    &__search {
+        @include HeaderDisplayFlex();
+        gap: 8px;
+    }
+
+    &__search-item {
+        @include HeaderDisplayFlex();
+        gap: 10px;
+        margin-top: 26px;
+        margin-right: 40px;
+    }
+
+    &__input {
+        @include Input();
+    }
+
+    &__consultation-btn {
+        @include BtnStyle();
+    }
+
+    &__consultation-btn:hover {
+       @include BtnHover();
+    }
+
+    &__consultation-btn:active {
+       @include BtnActive();
+    }
+
+}

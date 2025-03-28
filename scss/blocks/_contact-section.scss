@@ -1,0 +1,67 @@
+.contact-section {
+    margin-top: 60px;
+    background-image: url("../images/section-image.png");
+}
+
+.contact {
+    padding: 120px 0 90px 500px;
+
+    &__section-wrapper {
+        padding-top: 25px;
+        width: 607px;
+        padding-left: 36px;
+        background-color: var(--clr--blue);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    &__section-title {
+        margin-bottom: 16px;
+        @include TypographyItem();
+    }
+
+    &__section-desc {
+        margin-bottom: 25px;
+        @include Typography400();
+        color: var(--clr--white);
+        opacity: 80px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    &__input {
+        border: none;
+        outline: none;
+        width: 532px;
+        padding: 19px;
+        border-radius: 8px;
+        background-color: var(--clr--647);
+        color: var(--clr--white);
+    }
+
+    &__input::placeholder {
+        @include Typographys();
+    }
+
+    &__form-btn {
+        outline: none;
+        margin-bottom: 40px;
+        width: 532px;
+        padding: 22px;
+        text-align: center;
+        background-color: var(--clr--white);
+        color: var(--clr--blue);
+        border-radius: 8px;
+        border: 2px solid var(--clr--white);
+        cursor: pointer;
+    }
+
+    &__form-btn:hover {
+        background-color: var(--clr--blue);
+        color: var(--clr--white);
+    }
+}

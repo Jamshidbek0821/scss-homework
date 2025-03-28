@@ -1,0 +1,15 @@
+.document {
+&__section-title {
+    font-family: 'Montserrat', sans-serif;
+    @include TypographyTop();
+    text-align: center;
+    color: var(--clr--333);
+}
+&__img {
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 74px;
+    margin-left: 70px;
+   
+}
+}
