@@ -10,8 +10,7 @@
     }
 
     &__img-title {
-        @include Typography500();
-        color:var(--clr--white);
+        @include Typography($fw:500, $fs:20px, $lh:100%, $ls:0%, $clr:var(--clr--white));
     }
 
     &__img-title:hover {
@@ -30,11 +29,11 @@
     }
 
     &__title {
-        @include TypographyTitle();
+        @include Typography($fw:700, $fs:20px, $lh:100%, $ls:0%, $clr:var(--clr--white));
     }
 
     &__sub {
-        @include Typographys();
+        @include Typography($fw:400, $fs:16px, $lh:100%, $ls:0%, $clr:var(--clr--white));
     }
 
     &__desc {
@@ -53,7 +52,7 @@
 
     &__strong {
         padding-left: 20px;
-        @include TypographyTitle();
+        @include Typography($fw:700, $fs:20px, $lh:100%, $ls:0%, $clr:var(--clr--white));
     }
 
     &__input {
@@ -76,11 +75,7 @@
         @include BtnActive();
     }
     &__line {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 24px;
-        letter-spacing: 0%;
-        color: gray;
+        @include Typography($fw:400, $fs:12px, $lh:24px, $ls:0%, $clr:var(--clr--gray));
         margin-top: 18px;
         padding-bottom: 32px;
         cursor: pointer;
@@ -91,7 +86,6 @@
     }
 
     &__border-btn {
-        
-        border-bottom: 2px solid gray;
+        border-bottom: 2px solid var(--clr--gray);
     }
 }

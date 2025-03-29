@@ -17,13 +17,13 @@
 
     &__section-title {
         margin-bottom: 16px;
-        @include TypographyItem();
+        @include Typography($fw:700, $fs:40px, $lh:100%, $clr:var(--clr--white));
+
     }
 
     &__section-desc {
         margin-bottom: 25px;
-        @include Typography400();
-        color: var(--clr--white);
+        @include Typography($fw:400, $fs:18px, $lh:100%, $ls:0%, $clr:var(--clr--white));
         opacity: 80px;
     }
 
@@ -44,7 +44,7 @@
     }
 
     &__input::placeholder {
-        @include Typographys();
+        @include Typography($fw:400, $fs:18px, $lh:100%, $ls:0%, $clr:var(--clr--white));
     }
 
     &__form-btn {

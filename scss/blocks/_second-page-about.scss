@@ -2,8 +2,7 @@
     &__section-wrapper {
         text-align: center;
         margin-top: 67px;
-       @include TypographyTop();
-        color: var(--clr--333);
+        @include Typography($fw:700, $fs:48px, $lh:100%, $ls:0%, $clr:var(--clr--333));
     }
 
     &__item {
@@ -15,18 +14,13 @@
         margin-top: 40px;
         margin-bottom: 100px;
         font-family: 'Montserrat', sans-serif;
-        @include TypographyBtn();
-        color: var(--clr--333);
+        @include Typography($fw:500, $fs:18px, $lh:100%, $ls:0%, $clr:var(--clr--333));
         opacity: 80%;
     }
 
     &__item-top {
         font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 100px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        color: var(--clr--blue);
+        @include Typography($fw:700, $fs:100px, $lh:100%, $ls:0%, $clr:var(--clr--blue));
         text-align: center;
     }
 

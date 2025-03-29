@@ -1,9 +1,8 @@
 .document {
 &__section-title {
     font-family: 'Montserrat', sans-serif;
-    @include TypographyTop();
+    @include Typography($fw:700, $fs:48px, $lh:100%, $ls:0%, $clr:var(--clr--333));
     text-align: center;
-    color: var(--clr--333);
 }
 &__img {
     text-align: center;

@@ -12,17 +12,12 @@
     }
     
     &__section-sub {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        color: var(--clr--white);
-        opacity: 80%;
+      @include Typography($fw:400, $fs:20px, $lh:100%, $ls:0%, $clr:var(--clr--white));
+      opacity: 80%;
     }
     
     &__section-span {
-        @include TypographyList();
-        color: var(--clr--white);
+      @include Typography($fw:500, $fs:20px, $lh:100%, $ls:0%, $clr:var(--clr--white));
     }
     &__content-wrapper {
       padding-top: 140px;
@@ -31,15 +26,14 @@
   
     &__title {
       width: 582px;
-      @include TypographyItem();
+      @include Typography($fw:700, $fs:20px, $lh:100%, $ls:0%, $clr:var(--clr--white));
       text-transform: uppercase;
     }
   
     &__desc {
       margin-top: 16px;
       width: 480px;
-      @include TypographyDesc();
-      color: var(--clr--FFFCC);
+      @include Typography($fw:400, $fs:24px, $lh:100%, $ls:0%, $clr:var(--clr--FFFCC));
       opacity: 80%;
     }
   
@@ -48,9 +42,7 @@
       padding: 15px 30px 15px 31px;
       border-radius: 8px;
       font-family: 'Montserrat', sans-serif;
-      @include Typography600();
-      background-color: var(--clr--blue);
-      color: var(--clr--white);
+      @include Typography($fw:600, $fs:18px, $lh:100%, $ls:0%, $clr:var(--clr--white), $bg-clr:var(--clr--blue));
       border: 2px solid var(--clr--blue);
       cursor: pointer;
     }

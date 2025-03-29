@@ -6,15 +6,12 @@
     &__title {
         margin-top: 44px;
         text-align: center;
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 100%;
-        letter-spacing: 0%;
-        color: var(--clr--333);
+        @include Typography($fw:700, $fs:48px, $lh:100%, $ls:0%, $clr:var(--clr--333));
     }
 
     &__checkbox-title {
-        @include CheckboxTitle();
+        @include Typography($fw:500, $fs:18px, $lh:150%, $ls:0%, $clr:var(--clr--00DE));
+
     }
     &__filter {
         display: flex;
@@ -103,29 +100,17 @@
     }
     &__product-title {
         padding-left: 19px;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: 0%;
+        @include Typography($fw:500, $fs:20px, $lh:150%, $ls:0%, $clr:var(--clr--00CC));
         vertical-align: middle;
-        color:var(--clr--00CC);
     }
     &__product-desc {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0%;        
+        @include Typography($fw:700, $fs:14px, $lh:20px, $ls:0%, $clr:var(--clr--00CC));       
         padding-left: 19px;
-        color: var(--clr--00CC);
         opacity: 80%;
         
     }
     &__product-desc--sub {
-        font-weight: 550;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0%;        
-        color: var(--clr--3399);
+        @include Typography($fw:550, $fs:14px, $lh:20px, $ls:0%, $clr:var(--clr--3399));       
         opacity: 60%;
     }
 }

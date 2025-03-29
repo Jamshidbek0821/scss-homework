@@ -4,18 +4,16 @@
     }
 
     &__title {
-        @include Typograpyh700();
+        @include Typography($fw:700, $fs:48px, $lh:100%, $ls:0%, $clr:var(--clr--333));
         text-align: center;
         text-transform: lowercase;
-        color: var(--clr--333);
     }
 
     &__desc {
         width: 873px;
         margin-top: 30px;
         margin: 0 auto;
-        @include Typography400();
-        color: var(--clr--333);
+        @include Typography($fw:400, $fs:18px, $lh:100%, $ls:0%, $clr:var(--clr--333));
         opacity: 80%;
     }
 
@@ -26,8 +24,7 @@
     &__partners-title {
         text-align: center;
         margin-top: 67px;
-        @include Typograpyh700();
-        color: var(--clr--333);
+        @include Typography($fw:700, $fs:48px, $lh:100%, $ls:0%, $clr:var(--clr--333));
     }
 }
 

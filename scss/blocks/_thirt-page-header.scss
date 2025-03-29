@@ -27,7 +27,7 @@
     }
 
     &__phone {
-        @include PhoneStyle();
+        @include Typography($fw:400, $fs:16px, $lh:100%, $ls:0%, $clr:var(--clr--color-33B2));
         @include HeaderDisplayFlex();
         gap: 8px;
     }
@@ -37,7 +37,7 @@
     }
 
     &__kontact {
-        @include PhoneStyle();
+        @include Typography($fw:400, $fs:16px, $lh:100%, $ls:0%, $clr:var(--clr--color-33B2));
     }
 
     &__kontact:hover {
@@ -45,7 +45,7 @@
     }
 
     &__select-language {
-        @include TypographyLanguage();
+        @include Typography($fw:500, $fs:16px, $lh:20px, $ls:1.27px, $clr:var(--clr--color-000));
     }
 
     &__option {
@@ -69,8 +69,7 @@
 
     &__top {
         margin-top: 28px;
-        @include TypographyList();
-        color: var(--clr--333);
+        @include Typography($fw:500, $fs:20px, $lh:100%, $ls:0%, $clr:var(--clr--color-333));
     }
 
     &__top:hover {
@@ -86,7 +85,7 @@
     }
 
     &__nav-link-item {
-        @include NavLink();
+        @include Typography($fw:500, $fs:16px, $lh:100%, $ls:0%, $clr:var(--clr--1A1A));
     }
 
     &__nav-link-item:hover {
@@ -114,7 +113,7 @@
     }
 
     &__consultation-btn:hover {
-       @include BtnHover();
+        @include Typography($fw:500, $fs:16px, $lh:158%, $ls:0.75%, $clr:var(--clr--white), $bg-clr:var(--clr--blue));
     }
 
     &__consultation-btn:active {
